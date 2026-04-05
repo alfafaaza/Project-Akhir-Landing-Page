@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-left">
+            <span class="btn-outline">Search</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <a href="#" class="btn-outline">For more info</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="label"data-aos="fade-down" data-aos-duration="1000">NOW IN HERE</span>
+            <h1 data-aos="zoom-in-up" data-aos-duration="1000">Coffee That Brings<br>Life to Life</h1>
+            <p data-aos="zoom-out" data-aos-duration="1000">Coffee is more than just a drink. It’s your morning companion, your midday boost, and your perfect evening pause.</p>
+            <div class="hero-btns">
+                <button class="btn-fill active" data-aos="fade-right" data-aos-duration="1000">Description</button>
+                <button class="btn-fill" data-aos="fade-left" data-aos-duration="1000">Next for detail</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="showcase">
+        <div class="ticker">UNLOCKED NEW MENU • UNLOCKED NEW MENU • UNLOCKED NEW MENU • UNLOCKED NEW MENU • UNLOCKED NEW MENU</div>
+        <h2 data-aos="fade-up">Flavor That Speaks</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./Assets/americano (3).jpg">
+                    <div class="info">
+                        <h3>Americano</h3>
+                        <p>Rp 18.000</p>
+                    </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./Assets/matcha latte.jpg">
+                <div class="info">
+                    <h3>Matcha Latte</h3>
+                    <p>Rp 25.000</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./Assets/cappucino.jpg">
+                <div class="info">
+                    <h3>Cappuccino</h3>
+                    <p>Rp 25.000</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./Assets/chocolate.jpg">
+                <div class="info">
+                    <h3>Chocolate</h3>
+                    <p>Rp 23.000</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./Assets/caramel macchiato (2).jpg">
+                <div class="info">
+                    <h3>Caramel Macchiato</h3>
+                    <p>Rp 28.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="ticker">UNLOCKED NEW MENU • UNLOCKED NEW MENU • UNLOCKED NEW MENU • UNLOCKED NEW MENU • UNLOCKED NEW MENU</div>
+</section>
+
+    <section class="details">
+        <div class="details-grid">
+            <div class="details-text">
+                <h2 data-aos="zoom-out" data-aos-duration="1000">BEST<br>SELLER</h2>
+                <div class="line"></div>
+                <p data-aos="zoom-in" data-aos-duration="1500">A timeless Italian classic crafted with a perfect harmony of rich espresso, silky steamed milk, and a thick layer of velvety foam. Each cup delivers a bold coffee flavor balanced with a smooth, creamy texture that feels both indulgent and comforting. The foam on top adds a light, airy finish, making every sip soft and satisfying. Whether you’re starting your day or taking a relaxing break, cappuccino offers a warm and elegant coffee experience that never goes out of style.</p>
+                <a href="#" class="read-more" data-aos="fade-right" data-aos-duration="2000">Read more</a>
+            </div>
+
+            <div class="details-visual">
+                <div class="best-seller-frame" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
+                    <img src="./Assets/cappucino.jpg" alt="Cappucino">
+                </div>
+                <div class="drink-info-box" data-aos="zoom-out">
+                    <h3>Cappucino</h3>
+                    <ul>
+                        <li>The ideal mix of strong espresso and creamy milk</li>
+                        <li>Perfect for mornings or relaxing breaks</li>
+                    </ul>
+                    <div class="meta-footer">
+                        <span>Instagram.com//alffzza_</span>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        initialSlide: 2,          
+        loop: true,               
+        loopedSlides: 5,           
+        watchSlidesProgress: true, 
+        
+        autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+        },
+
+        coverflowEffect: {
+        rotate: 0,               
+        stretch: 0,             
+        depth: 150,             
+        modifier: 1,
+        slideShadows: false,     
+        },
+
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+    });
+    </script>
+</body>
+</html>
